@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char *argv[]) {
+	
+	int  n, r;
+	
+	printf("Digite um numero;  ");
+	scanf ("%d", &n);
+	
+	if (n > 0){
+		r = n*-1;
+	}else {
+
+	r = n*n;
+	}
+	
+	printf("%d", r);
+
+	
+	
+	return 0;
+}
