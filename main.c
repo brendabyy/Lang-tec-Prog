@@ -1,40 +1,61 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+void exec2(){
+	 float dola, real, cota;
+	    scanf("%f", &real);
+	    scanf("%f", &cota);
+ 	   printf("%f reais são %f dolinhos", real, (real/cota)); 
+} 
 
+
+void exec3(){
+	float tempC, tempF;
+ 	   scanf("%f", &tempC); 
+	   tempF = tempC *(9.0/5.0) + 32,0;
+	   printf("A temperatura maxima de hoje na tela da globo %f\n",tempF);
+}
+
+void exec8(){
+	int segundos, horas, minutos;
+    	scanf("%f", &segundos);
+	    horas = segundos/3600;
+	    minutos = (segundos-(horas*3600))/60;
+    	segundos = segundos- ((horas*3600) + (minutos*60));
+    	printf("Tempo &d:&d:%d\n", horas, minutos, segundos);
+	
+}
 int main(int argc, char *argv[]) {
 	
+	int resposta;
+	printf("Usuario, qual exercicio quer resolver ? |2|3|8|\n");
+	scanf("%d",&resposta);
+	
 
-	int n;
-	printf("Entre com o numero: ");
-	scanf("%d", &n);
+    case 2:
+    	exec2();
+    break;
+	 
+    case 3:
+    	;
+	   float tempC, tempF;
+ 	   scanf("%f", &tempC); 
+	   tempF = tempC *(9.0/5.0) + 32,0;
+	   printf("A temperatura maxima de hoje na tela da globo %f\n",tempF);
+    break;
+    
+    case 8:
+    	;
+	 //(URI 1019) Leia um valor inteiro, que é o tempo de duração em segundos
+	    int segundos, horas, minutos;
+    	scanf("%f", &segundos);
+	    horas = segundos/3600;
+	    minutos = (segundos-(horas*3600))/60;
+    	segundos = segundos- ((horas*3600) + (minutos*60));
+    	printf("Tempo &d:&d:%d\n", horas, minutos, segundos);
+    break
 	
-	if(n<10 && n>0)
-		if (n==1 || n==2 || n==3 || n==5 || n==7)
-			printf("O dobro de %d = %d", n, (n*2));
-		else if(n%2 == 0)
-			printf("%d+2 = %d", n, n+2);
-		else
-			printf("|%d|%d|%d|", n-1, n, n+1);
-		
-	else printf("_out_of_range");	
-
-
-				
-	char op;
-	scanf("%c", &op);
-	switch(op){
 	
 	
-	case 'a': printf("opa ta falando com ele"); break;
-	
-	case 'b': printf("Benedito"); break;
-	
-	case 'c': printf("? complicada a situa??o"); break;
-	
-	case 'd': printf("Tamo junto"); break;
-			
-	}		
 	return 0;
 }
