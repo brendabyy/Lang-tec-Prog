@@ -1,61 +1,62 @@
-#include <stdio.h>
-#include <stdlib.h>
+[Project]
+FileName=main.c
+Name=Project1
+Type=1
+Ver=2
+ObjFiles=
+Includes=
+Libs=
+PrivateResource=
+ResourceIncludes=
+MakeIncludes=
+Compiler=
+CppCompiler=
+Linker=
+IsCpp=0
+Icon=
+ExeOutput=
+ObjectOutput=
+LogOutput=
+LogOutputEnabled=0
+OverrideOutput=0
+OverrideOutputName=
+HostApplication=
+UseCustomMakefile=0
+CustomMakefile=
+CommandLine=
+Folders=
+IncludeVersionInfo=0
+SupportXPThemes=0
+CompilerSet=0
+CompilerSettings=0000000000000000000000000
+UnitCount=1
 
-void exec2(){
-	 float dola, real, cota;
-	    scanf("%f", &real);
-	    scanf("%f", &cota);
- 	   printf("%f reais são %f dolinhos", real, (real/cota)); 
-} 
+[VersionInfo]
+Major=1
+Minor=0
+Release=0
+Build=0
+LanguageID=1033
+CharsetID=1252
+CompanyName=
+FileVersion=
+FileDescription=Developed using the Dev-C++ IDE
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=
+AutoIncBuildNr=0
+SyncProduct=1
 
+[Unit1]
+FileName=..\Documents\main.c
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
 
-void exec3(){
-	float tempC, tempF;
- 	   scanf("%f", &tempC); 
-	   tempF = tempC *(9.0/5.0) + 32,0;
-	   printf("A temperatura maxima de hoje na tela da globo %f\n",tempF);
-}
-
-void exec8(){
-	int segundos, horas, minutos;
-    	scanf("%f", &segundos);
-	    horas = segundos/3600;
-	    minutos = (segundos-(horas*3600))/60;
-    	segundos = segundos- ((horas*3600) + (minutos*60));
-    	printf("Tempo &d:&d:%d\n", horas, minutos, segundos);
-	
-}
-int main(int argc, char *argv[]) {
-	
-	int resposta;
-	printf("Usuario, qual exercicio quer resolver ? |2|3|8|\n");
-	scanf("%d",&resposta);
-	
-
-    case 2:
-    	exec2();
-    break;
-	 
-    case 3:
-    	;
-	   float tempC, tempF;
- 	   scanf("%f", &tempC); 
-	   tempF = tempC *(9.0/5.0) + 32,0;
-	   printf("A temperatura maxima de hoje na tela da globo %f\n",tempF);
-    break;
-    
-    case 8:
-    	;
-	 //(URI 1019) Leia um valor inteiro, que é o tempo de duração em segundos
-	    int segundos, horas, minutos;
-    	scanf("%f", &segundos);
-	    horas = segundos/3600;
-	    minutos = (segundos-(horas*3600))/60;
-    	segundos = segundos- ((horas*3600) + (minutos*60));
-    	printf("Tempo &d:&d:%d\n", horas, minutos, segundos);
-    break
-	
-	
-	
-	return 0;
-}
