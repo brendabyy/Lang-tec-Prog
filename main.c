@@ -1,6 +1,6 @@
 [Project]
 FileName=main.c
-Name=Project1
+Name=Project2
 Type=1
 Ver=2
 ObjFiles=
