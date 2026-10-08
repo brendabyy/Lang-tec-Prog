@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int comp_maior (int a, int b){
+int compara (int a, int b){
 	if (a>b)return a;
 	else return b;
 }
 int main(int argc, char *argv[]) {
 	int valor[10];
-	int i;
+	int i, maior;
 	
 	printf ("leia os numeros");
 	//PARA (INICIAL, CONDIÇÃO, INCREMENTO)
@@ -15,10 +15,16 @@ int main(int argc, char *argv[]) {
 		scanf ("%d", &valor[i]);
 	}
 	for (i=9; i>=0; i--){
-		printf("|%d|", valor[i]);
+		printf ("|%d| ", valor[i]);
 	}
+
+	for (i=1, maior=valor[0]; i<5; i=i+2){
+		int comp_temp = compara(valor[i], valor[i+1]);
+		maior = compara(maior, comp_temp);
+	}
+	printf("\n %d", maior);
 	
 	
 	
 	return 0;
-}
+}               
